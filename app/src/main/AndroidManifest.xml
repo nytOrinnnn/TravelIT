@@ -24,8 +24,17 @@
 
         <activity android:name=".HomePage"/>
         <activity android:name=".Destination1"/>
+        <activity android:name=".Destination2"/>
+        <activity android:name=".Destination3"/>
+        <activity android:name=".Destination4"/>
         <activity android:name=".Fillup"/>
+        <activity android:name=".Fillup2"/>
+        <activity android:name=".Fillup3"/>
+        <activity android:name=".Fillup4"/>
         <activity android:name=".Sum"/>
+<!--        <activity android:name=".Sum2"/>-->
+<!--        <activity android:name=".Sum3"/>-->
+<!--        <activity android:name=".Sum4"/>-->
     </application>
 
 </manifest>

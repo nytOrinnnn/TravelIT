@@ -22,5 +22,22 @@ public class HomePage extends MainActivity {
         Intent intent = new Intent(HomePage.this, Destination1.class);
         startActivity(intent);
     });
+
+        destination2.setOnClickListener(view -> {
+            Intent intent = new Intent(HomePage.this, Destination2.class);
+            startActivity(intent);
+        });
+
+        destination3.setOnClickListener(view -> {
+            Intent intent = new Intent(HomePage.this, Destination3.class);
+            startActivity(intent);
+        });
+
+        destination4.setOnClickListener(view -> {
+            Intent intent = new Intent(HomePage.this, Destination4.class);
+            startActivity(intent);
+        });
+
+
     }
 }

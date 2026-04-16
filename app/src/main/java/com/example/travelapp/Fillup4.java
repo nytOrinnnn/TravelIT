@@ -1,16 +1,13 @@
 package com.example.travelapp;
 
-import static android.icu.text.DisplayContext.LENGTH_SHORT;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-public class Fillup extends Destination1{
+public class Fillup4 extends Destination4{
 
     EditText number, name, email;
     TextView  total, num;
@@ -25,11 +22,10 @@ public class Fillup extends Destination1{
     String summary;
 
     int numCount = 1;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fillup);
+        setContentView(R.layout.fillup4);
 
         name = findViewById(R.id.name);
         number = findViewById(R.id.number);
@@ -43,9 +39,9 @@ public class Fillup extends Destination1{
 
         nxtBtn.setOnClickListener(view -> {
 
-            if (summaryGet()){
-            Intent intent = new Intent(Fillup.this, Sum.class);
-            intent.putExtra("SUMMARY", summary);
+            if (summaryGet4()){
+            Intent intent = new Intent(Fillup4.this, Sum.class);
+            intent.putExtra("SUMMARY4", summary);
             startActivity(intent);}
         });
 
@@ -53,7 +49,7 @@ public class Fillup extends Destination1{
             numCount++;
             num.setText("" + numCount);
 
-            total.setText("PRICE: $" + 500 * numCount);
+            total.setText("PRICE: $" + 850 * numCount);
         });
 
         min.setOnClickListener(view -> {
@@ -76,7 +72,7 @@ public class Fillup extends Destination1{
 
 
     }
-    public boolean summaryGet(){
+    public boolean summaryGet4(){
         NAME = name.getText().toString();
         NUM = number.getText().toString();
         EMAIL = email.getText().toString();
